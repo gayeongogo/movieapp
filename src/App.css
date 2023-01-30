@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
+/* 1,2 */
+/*
+*{margin: 0; padding: 0;}
+.btn{padding: 10px 0; background: yellowgreen; border: none; outline: 0; width: 500px; margin-top: 20px; display: block; margin: 10px auto;}
+span{text-align: center; display: block; font-size: 5rem;}
+input{display: block; padding: 5px 10px; margin: 10px auto; width: 500px;} */
+
+/* 3 */
+
+*{margin: 0; padding: 0;}
+
+.App{padding: 20px 0; box-sizing: border-box;}
+.pd{padding: 0 30px; height: 800px;}
+h1{text-align: center; margin-bottom: 20px; color: rgb(71, 71, 71); margin-top: 10px;}
+.movie{border: 3px solid #ddd; border-radius: 10px; padding: 15px 10px; display: flex; align-items: center; margin-bottom: 5px;}
+.movie-title{flex-grow: 1;}
+.movie-year{font-size: 12px; color: rgb(255, 160, 176);}
+input{width: 100%; padding: 10px 20px; box-sizing: border-box; margin-bottom: 5px; border-radius: 5px; border: 1px solid rgb(255, 160, 176);}
+.btn{width: 100%; padding: 15px 0; background: rgb(255, 160, 176); border: none; outline: 0; margin-bottom: 20px; color: #fff; border-radius: 5px;}
+.d-btn{padding: 5px 20px; background: rgb(255, 160, 176); color: #fff; border: none; outline: none; border-radius: 5px;}
+.err{font-size: 10px; color: rgb(255, 160, 176); margin-bottom: 5px;}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding: 20px;
+}
+.navbar .logo{margin-top: 0;}
+.navbar .logo a{text-decoration: none;}
+.navbar .navbar-nav{display: flex;}
+.navbar .navbar-nav li{list-style: none; margin: 0 20px;}
+.navbar .navbar-nav li a{color: rgb(112, 112, 112); text-decoration: none; font-weight: bold;}
+
+.footer{width: 100%; height: auto; background: #333; /* position: fixed; bottom: 0; right: 0; */}
+.innerFooter{color: #fff; padding: 30px 0; width: 100%; max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between;}
+.innerFooter ul{display: flex;}
+.innerFooter ul li{margin: 0 10px;}
+.bg{width: 100%; height: 500px; background-image: linear-gradient(to top, rgb(255, 135, 135), rgb(255, 247, 130)); display: flex; align-items: center; justify-content: center; font-size: 5rem; color: #fff; text-shadow: 2px 2px 5px #333;}
+#section1{width: 100%; height: 300px; background: #ddd; margin-bottom: 5px;}
+#section2{width: 100%; height: 200px; background: #ccc;}
+.container{width: 1200px; height: inherit; background: rgba(255,255,255,.8); margin: 0 auto;}
+
+.card{border: 1px solid #ddd; padding: 30px 20px; margin-bottom: 5px; border-radius: 5px;}
+
+@media screen and (max-width: 1200px){
+    .container{width: 100%; padding: 0 30px;}
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* 4 */
+/* *{margin: 0; padding: 0; line-height: 1; box-sizing: border-box;}
+#root{margin: 20px auto; padding: 0 50px;}
+.state{font-size: 30px; text-align: center;}
+.btn{width: 100%; padding: 10px 0; background: yellowgreen; color: #fff; margin-top: 20px; border: none; outline: 0;} */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* 5 */
+/* *{margin:0; padding:0; line-height: 1; box-sizing: border-box;}
+#root{ margin: 20px auto; padding: 0 50px}
+input{width: 100%; padding: 10px 20px; border: 1px solid #ddd}
+button{width: 100%; padding: 10px 0; background: rgb(230, 135, 135); color: #fff; margin-top: 20px; border: none; outline: none;} */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
