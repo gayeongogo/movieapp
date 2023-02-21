@@ -17,6 +17,7 @@ function App3() {
             <Route path="MovieLink" element={<MovieLink />} />
             <Route path="users" element={<Users />} />
         </Routes>
+        <Home />
         <Footer />
     </div>
     );
