@@ -1,23 +1,21 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 const Home = () => {
     return (
         <div>
-            <div className='bg'>
-                React spa
-            </div>
-            <main id='main'>
-                <section id="section1">
-                    <div className="container">
-                        <p>section1</p>
+            <div className='container'>
+                <div className='bg'>
+                    <div className='home-Title'>
+                        <p className='title1'>Let's Try</p>
+                        <p className='title2'>MOVIE APP!</p>
+                        <p className='title3'>We Made Movie App Yeah</p>
                     </div>
-                </section>
-                <section id="section2">
-                    <div className="container">
-                        <p>section2</p>
+                    <div className='home-img'>
+                        <Link to="../movies">TRY NOW</Link>
                     </div>
-                </section>
-            </main>
+                </div>
+            </div >
         </div>
     );
 };
