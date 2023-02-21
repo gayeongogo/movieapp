@@ -13,11 +13,11 @@ function App3() {
     <div className="App">
         <Navbar />
         <Routes>
-            <Route path="/" element={<Home />} />{/* "/": 현재위치 */}
+            <Route path="/App" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="MovieLink" element={<MovieLink />} />
             <Route path="users" element={<Users />} />
         </Routes>
-        <Home />
         <Footer />
     </div>
     );
