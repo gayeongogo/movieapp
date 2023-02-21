@@ -12,7 +12,7 @@ const Home = () => {
                         <p className='title3'>We Made Movie App Yeah</p>
                     </div>
                     <div className='home-img'>
-                        <Link to="../movies">TRY NOW</Link>
+                        <Link to="MovieLink">TRY NOW</Link>
                     </div>
                 </div>
             </div >
