@@ -22,10 +22,12 @@ const Movies = () => {
     )
     }) : '영화를 추가해주세요';
     return (
-        <div className='pd'>
-            <h1>영화 list</h1>
-            <MovieForm addMovie={addMovie}/>
-            {renderMovies}
+        <div className='listWrapArea'>
+            <div className='listWrap'>
+                <h1>영화 list</h1>
+                <MovieForm addMovie={addMovie}/>
+                {renderMovies}
+            </div >
         </div>
     );
 };

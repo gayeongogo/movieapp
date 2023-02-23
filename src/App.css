@@ -9,9 +9,9 @@ input{display: block; padding: 5px 10px; margin: 10px auto; width: 500px;} */
 
 *{margin: 0; padding: 0;}
 
-.App{padding: 20px 0; box-sizing: border-box;}
-.pd{padding: 0 30px; height: 800px;}
-h1{text-align: center; margin-bottom: 20px; color: rgb(71, 71, 71); margin-top: 10px;}
+.listWrapArea{width: 100%; height: 80vh; display: flex; align-items: center; justify-content: center;}
+.listWrap{width: 500px; height: 500px; background: #fff; box-shadow: 0 5px 10px rgba(108, 108, 108, 0.2); border-radius: 20px; padding: 20px;}
+h1{text-align: center; color: rgb(71, 71, 71);}
 .movie{border: 3px solid #ddd; border-radius: 10px; padding: 15px 10px; display: flex; align-items: center; margin-bottom: 5px;}
 .movie-title{flex-grow: 1;}
 .movie-year{font-size: 12px; color: rgb(255, 160, 176);}
@@ -20,19 +20,27 @@ input{width: 100%; padding: 10px 20px; box-sizing: border-box; margin-bottom: 5p
 .d-btn{padding: 5px 20px; background: rgb(255, 160, 176); color: #fff; border: none; outline: none; border-radius: 5px;}
 .err{font-size: 10px; color: rgb(255, 160, 176); margin-bottom: 5px;}
 
+.navWrap{
+    width: 100%;
+    height: 100%;
+    background: pink;
+}
 .navbar{
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #ddd;
-    padding: 20px;
+    align-items: center;
+    padding: 0 20px;
+    height: 80px;
 }
-.navbar .logo{margin-top: 0;}
-.navbar .logo a{text-decoration: none;}
-.navbar .navbar-nav{display: flex;}
+.navbar .logo{margin-top: 0;  }
+.navbar .logo a{text-decoration: none; width: 180px; height: 50px; background: url(../public/images/logo.png) no-repeat left center;background-size: contain; padding-right: 200px; display: block;}
+.navbar .logo a span{position: relative; top:7px}
+.navbar .navbar-nav{display: flex;} 
 .navbar .navbar-nav li{list-style: none; margin: 0 20px;}
 .navbar .navbar-nav li a{color: rgb(112, 112, 112); text-decoration: none; font-weight: bold;}
 
-.footer{width: 100%; height: auto; background: #333; /* position: fixed; bottom: 0; right: 0; */}
+.footer{width: 100%; height: auto; background: #333; position: fixed; bottom: 0; right: 0;}
 .innerFooter{color: #fff; padding: 30px 0; width: 100%; max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between;}
 .innerFooter ul{display: flex;}
 .innerFooter ul li{margin: 0 10px;}
