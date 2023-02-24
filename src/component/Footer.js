@@ -5,10 +5,6 @@ const Footer = () => {
         <div className='footer'>
             <div className='innerFooter'>
                 <p>&copy; 2023 Movies Company. All Rights Reserved.</p>
-                <ul>
-                    <li>youtube</li>
-                    <li>faceBook</li>
-                </ul>
             </div>
         </div>
     );

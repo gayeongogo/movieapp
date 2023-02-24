@@ -8,24 +8,26 @@ input{display: block; padding: 5px 10px; margin: 10px auto; width: 500px;} */
 /* 3 */
 
 *{margin: 0; padding: 0;}
-
-.listWrapArea{width: 100%; height: 80vh; display: flex; align-items: center; justify-content: center;}
-.listWrap{width: 500px; height: 500px; background: #fff; box-shadow: 0 5px 10px rgba(108, 108, 108, 0.2); border-radius: 20px; padding: 20px;}
-h1{text-align: center; color: rgb(71, 71, 71);}
-.movie{border: 3px solid #ddd; border-radius: 10px; padding: 15px 10px; display: flex; align-items: center; margin-bottom: 5px;}
+.listWrapArea{width: 100%; height: 100vh; margin-top: -81px; display: flex; align-items: center; justify-content: center; background: url(https://cdn.pixabay.com/photo/2020/04/19/09/07/fantasy-5062586_960_720.jpg) no-repeat center center/100% 100%;}
+.listWrap{width: 500px; height: 700px; background: rgba(255,255,255,.5); box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5); border-radius: 20px; padding: 20px; backdrop-filter: blur(5px);}
+.listWrap>h1{text-align: center; color: rgb(71, 71, 71); margin-bottom: 5px;}
+.listWrap>p{text-align: center; color: rgb(71, 71, 71); font-size: 14px; font-weight: 600; margin-bottom: 15px;}
+.input-area{display: flex; justify-content: space-between;}
+.input-box{flex-basis: 49%;}
+input{width: 100%; padding: 10px 20px; box-sizing: border-box; margin-bottom: 5px; border-radius: 5px; border: none; background: #f1f1f1;}
+.movie{background: #fff; border-radius: 5px; padding: 15px 20px; display: flex; align-items: center; margin-bottom: 10px;}
 .movie-title{flex-grow: 1;}
-.movie-year{font-size: 12px; color: rgb(255, 160, 176);}
-input{width: 100%; padding: 10px 20px; box-sizing: border-box; margin-bottom: 5px; border-radius: 5px; border: 1px solid rgb(255, 160, 176);}
-.btn{width: 100%; padding: 15px 0; background: rgb(255, 160, 176); border: none; outline: 0; margin-bottom: 20px; color: #fff; border-radius: 5px;}
-.d-btn{padding: 5px 20px; background: rgb(255, 160, 176); color: #fff; border: none; outline: none; border-radius: 5px;}
-.err{font-size: 10px; color: rgb(255, 160, 176); margin-bottom: 5px;}
+.movie-year{margin-left: 5px; font-size: 12px; color: rgb(151 115 179);}
+.btn{width: 100%; padding: 10px 0; background: rgb(151 115 179); border: none; outline: 0; margin-bottom: 20px; color: #fff; border-radius: 5px;}
+.d-btn{padding: 5px 15px; background: rgb(79 47 104); color: #fff; border: none; outline: none; border-radius: 7px; cursor: pointer;}
+.err{font-size: 11px; color: rgb(79 47 104); margin-bottom: 5px;}
 
 .navWrap{
     width: 100%;
     height: 100%;
-    background: pink;
 }
 .navbar{
+    background: #fff;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #ddd;
@@ -33,18 +35,16 @@ input{width: 100%; padding: 10px 20px; box-sizing: border-box; margin-bottom: 5p
     padding: 0 20px;
     height: 80px;
 }
-.navbar .logo{margin-top: 0;  }
-.navbar .logo a{text-decoration: none; width: 180px; height: 50px; background: url(../public/images/logo.png) no-repeat left center;background-size: contain; padding-right: 200px; display: block;}
-.navbar .logo a span{position: relative; top:7px}
+.navbar .logo{margin-top: 0; }
+.navbar .logo a{text-decoration: none; width: 120px; height: 50px; background: url(../public/images/logo.png) no-repeat left center;background-size: contain; display: block; position: relative;}
+.navbar .logo a span{position: absolute; top:7px; right: 0;}
 .navbar .navbar-nav{display: flex;} 
 .navbar .navbar-nav li{list-style: none; margin: 0 20px;}
-.navbar .navbar-nav li a{color: rgb(112, 112, 112); text-decoration: none; font-weight: bold;}
+.navbar .navbar-nav li a{color: rgb(112, 112, 112); text-decoration: none; font-weight: bold; transition: .3s;}
+.navbar .navbar-nav li:hover a{color: #fff; transition: .3s;}
 
-.footer{width: 100%; height: auto; background: #333; position: fixed; bottom: 0; right: 0;}
-.innerFooter{color: #fff; padding: 30px 0; width: 100%; max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between;}
-.innerFooter ul{display: flex;}
-.innerFooter ul li{margin: 0 10px;}
-
+.footer{width: 100%; height: auto; background: rgba(0,0,0,.5); position: fixed; bottom: 0; right: 0;}
+.innerFooter{color: #fff; padding: 10px 0; width: 100%; max-width: 1200px; margin: 0 auto; display: flex; justify-content: center;}
 
 .container{width: 1200px; height: inherit; background: #fff; margin: 50px auto; text-align: center;}
 .title1{font-size: 1.5rem;}
@@ -72,6 +72,11 @@ input{width: 100%; padding: 10px 20px; box-sizing: border-box; margin-bottom: 5p
 @media screen and (max-width: 1200px){
     .container{width: 100%; padding: 0 30px;}
 }
+
+
+
+
+
 
 /* 4 */
 /* *{margin: 0; padding: 0; line-height: 1; box-sizing: border-box;}

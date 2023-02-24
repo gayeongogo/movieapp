@@ -46,10 +46,17 @@ const MovieForm = ({addMovie}) => {
 
     return (
         <form action="#" onSubmit={onSubmit}>
-            <input type="text" placeholder="영화제목을 쓰세요" value={movieTitle} onChange={(e) => {setMovieTitle(e.target.value)}} ref={inputRef}/>
-            <div className='err'>{titleError}</div>
-            <input type="text" placeholder="개봉년도를 쓰세요" value={movieYear} onChange={(e) => {setMovieYear(e.target.value)}}/>
-            <div className='err'>{yearError}</div>
+            <div className='input-area'>
+                <div className='input-box'>
+                    <input type="text" placeholder="영화제목을 쓰세요" value={movieTitle} onChange={(e) => {setMovieTitle(e.target.value)}} ref={inputRef}/>
+                    <div className='err'>{titleError}</div>
+                </div>
+                <div className='input-box'>
+                <input type="text" placeholder="개봉년도를 쓰세요" value={movieYear} onChange={(e) => {setMovieYear(e.target.value)}}/>
+                <div className='err'>{yearError}</div>
+                </div>
+                
+            </div>
             <button type="submit" className='btn'>ADD</button>
         </form>
     );

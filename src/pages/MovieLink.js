@@ -24,7 +24,8 @@ const Movies = () => {
     return (
         <div className='listWrapArea'>
             <div className='listWrap'>
-                <h1>영화 list</h1>
+                <h1>My Favorite Film</h1>
+                <p>나만의 영화 기록장</p>
                 <MovieForm addMovie={addMovie}/>
                 {renderMovies}
             </div >
