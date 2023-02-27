@@ -1,22 +1,47 @@
-import React from 'react';
-import { Link } from "react-router-dom";
+import { useState, useEffect } from 'react';
+import axios from 'axios';
+import HomeMovies from '../component/HomeMovies'
+import './Home.scss'
 
 const Home = () => {
+    const [isLoading, setIsLoading] =useState(true);
+    const [movies, setMovies]=useState([]);
+   
+
+   const getMovies= async() => {
+        const {data: {
+            data: {movies},
+        }}=await axios.get('https://yts-proxy.now.sh/list_movies.json?sort_by=rating');
+        console.log(movies);
+        setIsLoading(false);
+        setMovies(movies)
+    }
+    useEffect(() => {
+       getMovies() 
+    },[])
     return (
-        <div>
-            <div className='container'>
-                <div className='bg'>
-                    <div className='home-Title'>
-                        <p className='title1'>Let's Try</p>
-                        <p className='title2'>MOVIE APP!</p>
-                        <p className='title3'>We Made Movie App Yeah</p>
-                    </div>
-                    <div className='home-img'>
-                        <Link to="MovieLink">TRY NOW</Link>
-                    </div>
-                </div>
-            </div >
-        </div>
+        <section className='container'>
+        {
+            isLoading ? (
+            <div className='loader'><span className='loader_text'>'Loading...'</span></div>
+            ) : ( 
+            <div className='movies'>
+                {movies.map( movie => (
+                    <HomeMovies
+                        key={movie.id}  
+                        id={movie.id} 
+                        year={movie.year} 
+                        title={movie.title} 
+                        summary={movie.summary} 
+                        poster={movie.medium_cover_image}
+                        genres={movie.genres}
+                    />
+                ))
+            }
+            </div>
+        )
+        }
+        </section>
     );
 };
 
