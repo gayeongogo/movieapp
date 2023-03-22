@@ -23,7 +23,7 @@ const Home = () => {
         <section className='container'>
         {
             isLoading ? (
-            <div className='loader'><span className='loader_text'>'Loading...'</span></div>
+            <div className='loader-area'><div className='loader'></div></div>
             ) : ( 
             <div className='movies'>
                 {movies.map( movie => (

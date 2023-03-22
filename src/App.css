@@ -8,6 +8,7 @@ input{display: block; padding: 5px 10px; margin: 10px auto; width: 500px;} */
 /* 3 */
 
 *{margin: 0; padding: 0;}
+.App{}
 .listWrapArea{width: 100%; height: 100vh; margin-top: -81px; display: flex; align-items: center; justify-content: center; background: url(https://cdn.pixabay.com/photo/2020/04/19/09/07/fantasy-5062586_960_720.jpg) no-repeat center center/100% 100%;}
 .listWrap{width: 500px; height: 700px; background: rgba(255,255,255,.5); box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5); border-radius: 20px; padding: 20px; backdrop-filter: blur(5px);}
 .listWrap>h1{text-align: center; color: rgb(71, 71, 71); margin-bottom: 5px;}
@@ -46,7 +47,7 @@ input{width: 100%; padding: 10px 20px; box-sizing: border-box; margin-bottom: 5p
 .footer{width: 100%; height: auto; background: rgba(0,0,0,.5); position: fixed; bottom: 0; right: 0;}
 .innerFooter{color: #fff; padding: 10px 0; width: 100%; max-width: 1200px; margin: 0 auto; display: flex; justify-content: center;}
 
-.container{width: 1200px; height: inherit; background: #fff; margin: 50px auto; text-align: center;}
+.container{margin: 50px auto; text-align: center;}
 .title1{font-size: 1.5rem;}
 .title2{font-size: 4rem; font-weight: bold;}
 .title3{color: #464646;}
