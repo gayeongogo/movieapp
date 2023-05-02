@@ -13,10 +13,10 @@ const Users = () => {
     },[]);
 
     return (
-        <>{/* 형제를 묶어줘야 오류 안생김, 별 의미 없으므로 빈 태그 */}
-            <h1>Users</h1>
+        <div className='users-area'>
+            <h1 className='users'>Users</h1>
             <UserList users={users}/>
-        </>
+        </div>
     );
 };
 

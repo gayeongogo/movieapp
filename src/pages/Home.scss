@@ -26,12 +26,11 @@
     }
     
     .movies{
-        margin: 50px auto;
+        width: inherit;
         display: grid;
         grid-template-columns: repeat(3, minmax(400px, 1fr));
         grid-gap: 40px;
-        width: 80%;
-        padding-top: 70px;
+        padding-top: 100px;
         box-sizing: border-box;
     }
 }

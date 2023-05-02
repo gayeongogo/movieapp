@@ -5,15 +5,23 @@
     padding: 20px;
     border-radius: 10px;
     color: #adaeb9;
-    box-shadow:0 5px 10px rgba(0,0,0,.5);
+    box-shadow:0 5px 30px rgba(0,0,0,.3);
+    &:hover{
+        img{
+            transform: translate(0,-10px);
+            transition: .3s;
+        }
+    }
     a{color: #2c2c2c; text-decoration: none;}
     img{
         position: relative;
         top: -50px;
         max-width: 200px;
         width: 100%;
-        box-shadow: 0 5px 10px rgba(0,0,0,.5);
+        box-shadow: 0 5px 20px rgba(0,0,0,.3);
         border-radius: 10px;
+        transition: .3s;
+        
     }
     .movie_data{
         .movie_title{

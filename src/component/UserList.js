@@ -2,7 +2,7 @@ import React from 'react';
 
 const UserList = ({users}) => {
     return (
-        <div className='container'>
+        <div className='users-container'>
             {users.map((user) => {
                 return(
                     <div className="card" key={user.id}>

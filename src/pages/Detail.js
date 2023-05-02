@@ -33,11 +33,11 @@ const Detail = () => {
                         <div className="movies-content">
                             <div className="info">
                                 <span className="movie-title">{movie.title}</span>
-                                <span className="movie-rating">별점 : {movie.rating}</span>
-                                <span className="movie-runtime">러닝타임 : {movie.runtime}</span>
+                                <span className="movie-rating">Rating : {movie.rating}</span>
+                                <span className="movie-runtime">Running Time : {movie.runtime}</span>
                             </div>
                             <div className="genres">
-                                <span className='genre'>장르 :&nbsp;</span> 
+                                <span className='genre'>Genre :&nbsp;</span> 
                                 <ul className="list">
                                     {
                                         movie.genres.map((genre, idx) => <li key={idx}>{genre}</li>)
@@ -45,7 +45,7 @@ const Detail = () => {
                                 </ul>
                             </div>
                             <div className="summarys">
-                                <p className="summary">상세정보 : {movie.description_full}</p>
+                                <p className="summary">{movie.description_full}</p>
                             </div>
                         </div>
                     </div>

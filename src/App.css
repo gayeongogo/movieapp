@@ -8,8 +8,8 @@ input{display: block; padding: 5px 10px; margin: 10px auto; width: 500px;} */
 /* 3 */
 
 *{margin: 0; padding: 0;}
-.App{}
-.listWrapArea{width: 100%; height: 100vh; margin-top: -81px; display: flex; align-items: center; justify-content: center; background: url(https://cdn.pixabay.com/photo/2020/04/19/09/07/fantasy-5062586_960_720.jpg) no-repeat center center/100% 100%;}
+.App{width: 100%;}
+.listWrapArea{width: 100%; height: 100vh; display: flex; align-items: center; justify-content: center; background: url(https://cdn.pixabay.com/photo/2020/04/19/09/07/fantasy-5062586_960_720.jpg) no-repeat center center/100% 100%;}
 .listWrap{width: 500px; height: 700px; background: rgba(255,255,255,.5); box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5); border-radius: 20px; padding: 20px; backdrop-filter: blur(5px);}
 .listWrap>h1{text-align: center; color: rgb(71, 71, 71); margin-bottom: 5px;}
 .listWrap>p{text-align: center; color: rgb(71, 71, 71); font-size: 14px; font-weight: 600; margin-bottom: 15px;}
@@ -25,29 +25,31 @@ input{width: 100%; padding: 10px 20px; box-sizing: border-box; margin-bottom: 5p
 
 .navWrap{
     width: 100%;
-    height: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
 }
 .navbar{
-    background: #fff;
+    background: rgba(255,255,255,.7);
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #ddd;
+    box-shadow: 0 4px 20px rgba(0,0,0,.2);
     align-items: center;
     padding: 0 20px;
-    height: 80px;
+    height: 100%;
 }
-.navbar .logo{margin-top: 0; }
-.navbar .logo a{text-decoration: none; width: 120px; height: 50px; background: url(../public/images/logo.png) no-repeat left center;background-size: contain; display: block; position: relative;}
-.navbar .logo a span{position: absolute; top:7px; right: 0;}
+.navbar .logo{font-size: 30px; text-decoration: none; font-weight: bold; color: #fff; text-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);}
 .navbar .navbar-nav{display: flex;} 
-.navbar .navbar-nav li{list-style: none; margin: 0 20px;}
-.navbar .navbar-nav li a{color: rgb(112, 112, 112); text-decoration: none; font-weight: bold; transition: .3s;}
-.navbar .navbar-nav li:hover a{color: #fff; transition: .3s;}
+.navbar .navbar-nav li{list-style: none; margin: 0 20px; transition: .3s;}
+.navbar .navbar-nav li a{color: rgb(112, 112, 112); text-decoration: none; font-weight: bold;}
+.navbar .navbar-nav li:hover{transform: translate(0,-3px); transition: .3s; text-shadow: 0 4px 5px rgba(0, 0, 0, 0.5);}
 
 .footer{width: 100%; height: auto; background: rgba(0,0,0,.5); position: fixed; bottom: 0; right: 0;}
 .innerFooter{color: #fff; padding: 10px 0; width: 100%; max-width: 1200px; margin: 0 auto; display: flex; justify-content: center;}
 
-.container{margin: 50px auto; text-align: center;}
+.container{text-align: center; margin: 80px auto 0; width: 80%;}
 .title1{font-size: 1.5rem;}
 .title2{font-size: 4rem; font-weight: bold;}
 .title3{color: #464646;}
@@ -67,27 +69,12 @@ input{width: 100%; padding: 10px 20px; box-sizing: border-box; margin-bottom: 5p
 .home-img:hover a{opacity: 1;}
 #section1{width: 100%; height: 300px; background: #ddd; margin-bottom: 5px;}
 #section2{width: 100%; height: 200px; background: #ccc;}
-
-.card{border: 1px solid #ddd; padding: 30px 20px; margin-bottom: 5px; border-radius: 5px;}
+.users-area{display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; width: 100%;  margin-top: 80px;}
+.users-container{width: 80%;}
+.users{text-align: center; margin: 30px 0;}
+.card{border: 1px solid #ddd; padding: 30px 20px; margin-bottom: 10px; border-radius: 5px; box-sizing: border-box;}
 
 @media screen and (max-width: 1200px){
-    .container{width: 100%; padding: 0 30px;}
+    .container{width: 90%;}
 }
-
-
-
-
-
-
-/* 4 */
-/* *{margin: 0; padding: 0; line-height: 1; box-sizing: border-box;}
-#root{margin: 20px auto; padding: 0 50px;}
-.state{font-size: 30px; text-align: center;}
-.btn{width: 100%; padding: 10px 0; background: yellowgreen; color: #fff; margin-top: 20px; border: none; outline: 0;} */
-
-/* 5 */
-/* *{margin:0; padding:0; line-height: 1; box-sizing: border-box;}
-#root{ margin: 20px auto; padding: 0 50px}
-input{width: 100%; padding: 10px 20px; border: 1px solid #ddd}
-button{width: 100%; padding: 10px 0; background: rgb(230, 135, 135); color: #fff; margin-top: 20px; border: none; outline: none;} */
 
