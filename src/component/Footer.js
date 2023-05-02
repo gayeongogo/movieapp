@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <div className='footer'>
             <div className='innerFooter'>
-                <p>&copy; 2023 Movies Company. All Rights Reserved.</p>
+                <p>2023 GOFILM Company &copy; All Rights Reserved.</p>
             </div>
         </div>
     );
